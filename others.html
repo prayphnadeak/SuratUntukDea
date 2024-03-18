@@ -38,7 +38,9 @@ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text="
 
 <!--Bagian box pesan romantis dimulai dari sini-->
 <script type="text/javascript">            
-            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            var today = new Date();
+            var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';
+            var dateTime = date;
             const swals = Swal.mixin({
                 allowOutsideClick: false,
             });
@@ -48,7 +50,8 @@ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text="
                     input: 'text',
                     confirmButtonText: 'kirim perasaan',
                     showCancelButton: false,
-                });                           
+                });  
+
                 if(nama && nama.length < 111){
                 	play();
                 	window.nama = nama;
@@ -74,18 +77,18 @@ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text="
                     await swals.fire('Bisa wisata kuliner ke tempat yang makanannya enak-enak lagi');
                     await swals.fire('Tapi berikutnya Dea yang traktir abang ya xixixi #Berchandyaaa');    
                     await swals.fire('Bisa main games bareng lagi');      
-                    await swals.fire('Bisa nonton bareng lagi');       
-                    await swals.fire('Dan melakukan aktivitas menyenangkan lainnya untuk refreshing &#128578');  
+                    await swals.fire('Bisa nonton film di bioskop bareng lagi');       
+                    await swals.fire('Dan melakukan aktivitas menyenangkan lainnya untuk refresing &#128578');  
                     await swals.fire('Biar ngga apa kali kan kepalanya kalo belajar terus xixixi'); 
                     // box pesan berakhir sini
         
-                    prtnya = " long weekend berikutnya mau ngapain lagi nih?";
+                    prtnya = "long weekend berikutnya mau ngapain lagi nih?";
                     //
                     window.prtnya = prtnya;
                     var { value: tnya } = await swals.fire({
                     title: 'Dea,' + prtnya,
                     input: 'text',
-                    confirmButtonText: 'OK GAS!',
+                    confirmButtonText: 'Ayok kita jalan!',
                     showCancelButton: false,
                 });             
                 if(tnya && tnya.length < 111){
