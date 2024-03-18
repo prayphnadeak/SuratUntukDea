@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <style>
+      /* Bagian untuk memunculkan background foto romantis dengan pasangan*/
+      /* Upload fotomu dengan pasangan di imgbb.com, lalu link hosting-nya copy-paste untuk gantikan link url di bawah ini*/
+      body{background-image: url("https://thumbs.dreamstime.com/b/love-letter-background-valentine-s-day-empty-space-text-152223698.jpg");
+      background-repeat: round;background-size: 1000000% 1000000% 1000000%;background-position: center;transition:all .3s ease;}
+    </style> <div id="bodyblur"></div>
+    <center>
+    <h1>Hai Dek!</h1>
+    <img src="https://media.tenor.com/jDlsf-k-FooAAAAi/kawaii-loveletter.gif/" size="10">
+    <h1>Mau baca surat spesial dari abang?</h1>
+    <button id="btn_mau" onclick="window.open('others.html')">Mau Baca Dong</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Nggak Mau. Males!
+    </button>
+    </center>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+  
+</html>
