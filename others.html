@@ -10,7 +10,7 @@
 
 /* Bagian untuk memunculkan background foto romantis dengan pasangan*/
 /* Upload fotomu dengan pasangan di imgbb.com, lalu link hosting-nya copy-paste untuk gantikan link url di bawah ini*/
-body{background-image: url("https://i.ibb.co/PgPVLVT/pray-and-dea.jpg");
+body{background-image: url("https://i.ibb.co/FzmYJQV/pray-dan-dea.png");
 background-repeat: repeat;background-size: 10% 10% 10%;transition:all .3s ease;}
 </style><div id="bodyblur"></div>
 
@@ -93,7 +93,7 @@ function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text="
                 });             
                 if(tnya && tnya.length < 111){
                 	window.tnya = tnya;
-                    document.getElementById("hasiljawab").innerHTML = "Jawaban telah terkirim "</b>";
+                    document.getElementById("hasiljawab").innerHTML = "Jawaban dari&nbsp;" + nama + ":" + "&nbsp;<b>" + tnya + "</b>";
                     await swals.fire(`Sekali lagi, semangat ya Dea. Tuhan Yesus menyertai studi dan pekerjaanmu. GBUs &#10084;&#65039;`);
                     expl();
                 } else {
